@@ -24,16 +24,6 @@ legacyForge {
             systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
         }
 
-        client2 {
-            client()
-            sourceSet = sourceSets.main
-            ideName = "Client (2)"
-
-            programArguments.addAll('--username', 'YoungOnion')
-            gameDirectory.set(file("runs/client2"))
-            systemProperty('forge.enabledGameTestNamespaces', project.mod_id)
-        }
-
         server {
             server()
             sourceSet = sourceSets.main
@@ -54,7 +44,7 @@ legacyForge {
             programArguments.addAll('--all')
             programArguments.addAll('--output', file('src/generated/resources/').getAbsolutePath())
             programArguments.addAll('--existing', file('src/main/resources/').getAbsolutePath())
-            programArguments.addAll('--existing-mod', 'gtceu', '--existing-mod', 'bloodmagic')
+            programArguments.addAll('--existing-mod', 'storagedrawers')
         }
 
         configureEach {

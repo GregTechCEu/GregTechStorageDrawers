@@ -7,7 +7,7 @@ emi = "1.1.13+1.20.1"
 jade = "11.12.3+forge"
 
 ## cursemaven ##
-
+storagedrawers = "6549483" # 12.9.14
 
 [libraries]
 ldlib                     = { module = "com.lowdragmc.ldlib:ldlib-forge-1.20.1", version.ref = "ldlib" }
@@ -18,3 +18,4 @@ emi                       = { module = "dev.emi:emi-forge", version.ref = "emi" 
 jade                      = { module = "maven.modrinth:jade", version.ref = "jade" }
 
 ## cursemaven ##
+storagedrawers           = { module = "curse.maven:storage-drawers-223852", version.ref = "storagedrawers" }

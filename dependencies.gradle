@@ -6,6 +6,7 @@ dependencies {
     modImplementation(forge.gtceu)
 
     // Storage Drawers
+    modImplementation(forge.storagedrawers)
 
     modRuntimeOnly(forge.jade)
     modRuntimeOnly(forge.emi)
