@@ -1,0 +1,36 @@
+repositories {
+    mavenLocal()
+    mavenCentral()
+
+    maven { // GTCEu
+        name = 'GTCEu Maven'
+        url = 'https://maven.gtceu.com'
+        content {
+            includeGroup 'com.gregtechceu.gtceu'
+        }
+    }
+
+    maven { // Curseforge
+        url = "https://cursemaven.com/"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+
+    maven { // Modrinth
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
+
+    maven { // LDLib
+        name = 'FirstDarkDev'
+        url = 'https://maven.firstdarkdev.xyz/snapshots/'
+    }
+
+    maven { // EMI
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
+    }
+}

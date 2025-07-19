@@ -1,0 +1,12 @@
+dependencies {
+    compileOnly(libs.jetbrains.annotations)
+
+    // GTCEu
+    modImplementation(forge.ldlib)
+    modImplementation(forge.gtceu)
+
+    // Storage Drawers
+
+    modRuntimeOnly(forge.jade)
+    modRuntimeOnly(forge.emi)
+}
