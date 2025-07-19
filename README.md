@@ -4,6 +4,9 @@ Rubber and Treated Wood Storage Drawers for GregTech Modern
 
 For Storage Drawers + GregTech Modern on MC 1.20.1 Forge.
 
+Curseforge: https://curseforge.com/minecraft/mc-mods/gregtech-storage-drawers
+Modrinth: https://modrinth.com/mod/gregtech-storage-drawers
+
 ### Adds Rubber Drawers:
 
 ![image](https://media.forgecdn.net/attachments/description/null/description_916706eb-d5e4-4999-8c6f-c5350f8cf54a.png)
@@ -15,3 +18,4 @@ For Storage Drawers + GregTech Modern on MC 1.20.1 Forge.
 ### And recipes for all of them!
 
 Thanks to Storage Drawers for the base textures, and StorageDrawersExtras for code inspiration
+Similar to [GregTech Drawers](https://github.com/Nomi-CEu/gregtech-drawers) for 1.12.2
