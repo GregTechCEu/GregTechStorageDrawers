@@ -17,5 +17,6 @@ Modrinth: https://modrinth.com/mod/gregtech-storage-drawers
 
 ### And recipes for all of them!
 
-Thanks to Storage Drawers for the base textures, and StorageDrawersExtras for code inspiration
-Similar to [GregTech Drawers](https://github.com/Nomi-CEu/gregtech-drawers) for 1.12.2
+Thanks to Storage Drawers for the base textures, and StorageDrawersExtras for code inspiration<br>
+Similar to [GregTech Drawers](https://github.com/Nomi-CEu/gregtech-drawers) for 1.12.2,<br>
+and [Functional GregTech Drawers](https://github.com/ThePansmith/rubberdrawers) for Functional Storage
