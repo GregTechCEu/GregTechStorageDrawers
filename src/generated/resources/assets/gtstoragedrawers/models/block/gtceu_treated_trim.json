@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gtstoragedrawers:block/gtceu/drawers_treated_side"
+  }
+}

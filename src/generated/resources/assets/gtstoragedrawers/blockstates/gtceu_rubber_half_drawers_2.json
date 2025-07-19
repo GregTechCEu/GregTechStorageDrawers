@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "gtstoragedrawers:block/gtceu_rubber_half_drawers_2",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "gtstoragedrawers:block/gtceu_rubber_half_drawers_2"
+    },
+    "facing=south": {
+      "model": "gtstoragedrawers:block/gtceu_rubber_half_drawers_2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gtstoragedrawers:block/gtceu_rubber_half_drawers_2",
+      "y": 270
+    }
+  }
+}

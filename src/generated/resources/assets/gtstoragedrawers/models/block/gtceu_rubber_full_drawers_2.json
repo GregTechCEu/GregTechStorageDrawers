@@ -1,0 +1,13 @@
+{
+  "parent": "storagedrawers:block/full_drawers_orientable",
+  "textures": {
+    "down": "gtstoragedrawers:block/gtceu/drawers_rubber_side",
+    "east": "gtstoragedrawers:block/gtceu/drawers_rubber_side",
+    "north": "gtstoragedrawers:block/gtceu/drawers_rubber_front_2",
+    "particle": "gtstoragedrawers:block/gtceu/drawers_rubber_front_2",
+    "south": "gtstoragedrawers:block/gtceu/drawers_rubber_side",
+    "trim": "gtstoragedrawers:block/gtceu/drawers_rubber_trim",
+    "up": "gtstoragedrawers:block/gtceu/drawers_rubber_side",
+    "west": "gtstoragedrawers:block/gtceu/drawers_rubber_side"
+  }
+}

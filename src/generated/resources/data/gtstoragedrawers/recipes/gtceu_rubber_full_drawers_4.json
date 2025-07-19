@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gtstoragedrawers",
+  "key": {
+    "/": {
+      "item": "gtceu:rubber_planks"
+    },
+    "x": {
+      "tag": "forge:chests/wooden"
+    }
+  },
+  "pattern": [
+    "x/x",
+    "///",
+    "x/x"
+  ],
+  "result": {
+    "count": 4,
+    "item": "gtstoragedrawers:gtceu_rubber_full_drawers_4"
+  },
+  "show_notification": true
+}

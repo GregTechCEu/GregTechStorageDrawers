@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "gtstoragedrawers:block/gtceu_treated_full_drawers_4",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "gtstoragedrawers:block/gtceu_treated_full_drawers_4"
+    },
+    "facing=south": {
+      "model": "gtstoragedrawers:block/gtceu_treated_full_drawers_4",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gtstoragedrawers:block/gtceu_treated_full_drawers_4",
+      "y": 270
+    }
+  }
+}

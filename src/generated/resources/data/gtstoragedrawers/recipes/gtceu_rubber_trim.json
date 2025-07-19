@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gtstoragedrawers",
+  "key": {
+    "/": {
+      "tag": "forge:rods/wooden"
+    },
+    "x": {
+      "item": "gtceu:rubber_planks"
+    }
+  },
+  "pattern": [
+    "x/x",
+    "/x/",
+    "x/x"
+  ],
+  "result": {
+    "count": 4,
+    "item": "gtstoragedrawers:gtceu_rubber_trim"
+  },
+  "show_notification": true
+}

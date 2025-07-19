@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gtstoragedrawers",
+  "key": {
+    "/": {
+      "item": "gtceu:treated_wood_planks"
+    },
+    "x": {
+      "tag": "forge:chests/wooden"
+    }
+  },
+  "pattern": [
+    "///",
+    " x ",
+    "///"
+  ],
+  "result": {
+    "item": "gtstoragedrawers:gtceu_treated_full_drawers_1"
+  },
+  "show_notification": true
+}

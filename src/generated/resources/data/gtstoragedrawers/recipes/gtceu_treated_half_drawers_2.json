@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gtstoragedrawers",
+  "key": {
+    "/": {
+      "item": "gtceu:treated_wood_slab"
+    },
+    "x": {
+      "tag": "forge:chests/wooden"
+    }
+  },
+  "pattern": [
+    "/x/",
+    "///",
+    "/x/"
+  ],
+  "result": {
+    "count": 2,
+    "item": "gtstoragedrawers:gtceu_treated_half_drawers_2"
+  },
+  "show_notification": true
+}
