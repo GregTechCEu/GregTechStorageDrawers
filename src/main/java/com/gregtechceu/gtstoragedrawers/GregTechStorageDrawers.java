@@ -32,8 +32,8 @@ public class GregTechStorageDrawers {
             Registries.CREATIVE_MODE_TAB,
             new ResourceLocation(MODID, MODID));
 
-    public GregTechStorageDrawers(FMLJavaModLoadingContext ctx) {
-        IEventBus bus = ctx.getModEventBus();
+    public GregTechStorageDrawers() {
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         for (DrawerTypes type : DrawerTypes.values()) {
             type.registerBlocks(BLOCK_REGISTER);
