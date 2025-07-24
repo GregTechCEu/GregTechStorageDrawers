@@ -48,7 +48,7 @@ public class GregTechStorageDrawers {
 
     public static void registerCreativeTab(RegisterEvent event) {
         event.register(Registries.CREATIVE_MODE_TAB, helper -> helper.register(TAB, CreativeModeTab.builder()
-                .icon(() -> new ItemStack(DrawerTypes.RUBBER.getData().blockFull2.get())) // todo verify
+                .icon(() -> new ItemStack(DrawerTypes.RUBBER.getData().blockFull2.get()))
                 .title(Component.translatable("itemGroup.gtstoragedrawers"))
                 .displayItems((params, output) -> ITEM_REGISTER.getEntries()
                         .forEach(reg -> output.accept(new ItemStack(reg.get()))))
