@@ -1,5 +1,6 @@
 package com.gregtechceu.gtstoragedrawers;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
@@ -11,10 +12,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 
+import com.texelsaurus.minecraft.chameleon.ChameleonServices;
+import com.texelsaurus.minecraft.chameleon.registry.ChameleonRegistry;
+import com.texelsaurus.minecraft.chameleon.registry.ForgeRegistryContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,8 +27,10 @@ public class GregTechStorageDrawers {
     public static final String MOD_NAME = "GregTech Storage Drawers";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
 
-    public static final DeferredRegister<Block> BLOCK_REGISTER = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-    public static final DeferredRegister<Item> ITEM_REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    public static final ChameleonRegistry<Block> BLOCK_REGISTER = ChameleonServices.REGISTRY
+            .create(BuiltInRegistries.BLOCK, MODID);
+    public static final ChameleonRegistry<Item> ITEM_REGISTER = ChameleonServices.REGISTRY
+            .create(BuiltInRegistries.ITEM, MODID);
 
     private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(
             Registries.CREATIVE_MODE_TAB,
@@ -34,14 +38,15 @@ public class GregTechStorageDrawers {
 
     public GregTechStorageDrawers() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        ForgeRegistryContext context = new ForgeRegistryContext(bus);
 
         for (DrawerTypes type : DrawerTypes.values()) {
             type.registerBlocks(BLOCK_REGISTER);
             type.registerItems(ITEM_REGISTER);
         }
 
-        BLOCK_REGISTER.register(bus);
-        ITEM_REGISTER.register(bus);
+        BLOCK_REGISTER.init(context);
+        ITEM_REGISTER.init(context);
 
         bus.addListener(GregTechStorageDrawers::registerCreativeTab);
     }
