@@ -5,10 +5,10 @@ import com.gregtechceu.gtceu.GTCEu;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.registries.DeferredRegister;
 
 import com.jaquadro.minecraft.storagedrawers.core.ModBlockVariants;
 import com.jaquadro.minecraft.storagedrawers.core.ModBlockVariants.VariantData;
+import com.texelsaurus.minecraft.chameleon.registry.ChameleonRegistry;
 import lombok.Getter;
 
 public enum DrawerTypes {
@@ -56,11 +56,11 @@ public enum DrawerTypes {
         return "block/" + GTCEu.MOD_ID + "/drawers_" + name + "_" + textureVariant;
     }
 
-    public void registerBlocks(DeferredRegister<Block> register) {
+    public void registerBlocks(ChameleonRegistry<Block> register) {
         ModBlockVariants.registerVariant(register, data);
     }
 
-    public void registerItems(DeferredRegister<Item> register) {
+    public void registerItems(ChameleonRegistry<Item> register) {
         ModBlockVariants.registerVariantItem(register, data);
     }
 }
